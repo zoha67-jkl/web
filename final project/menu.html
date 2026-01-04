@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheezious Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h2>Cheezious</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Menu Page Content -->
+    <section class="page-header">
+        <h1>Cheezious Menu</h1>
+    </section>
+
+    <div class="page-content">
+        <div class="menu-content">
+            <!-- Appetizers Section -->
+            <section class="menu-section">
+                <h2>Appetizers</h2>
+                <div class="menu-scroll-container">
+                    <button class="scroll-btn scroll-left" onclick="scrollLeft('appetizers')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="menu-horizontal-scroll" id="appetizers">
+                        <div class="menu-card">
+                            <img src="https://thecheeziousmenu.pk/wp-content/uploads/2024/11/Clazone-Chunks-cheezious-300x300.webp" alt="Calzone chunks">
+                            <div class="menu-card-content">
+                                <h3>Calzone Chunks</h3>
+                                <p>Crispy calzone filled with cheese and herbs, served with marinara sauce</p>
+                                <div class="menu-price">Rs 350</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://cheezious.com/_next/image?url=https%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fcategories%2F1724240954045-Sandwiches%20%26%20Platters.jpg&w=640&q=75" alt="Bihari Rolls">
+                            <div class="menu-card-content">
+                                <h3>Bihari Rolls</h3>
+                                <p>Spicy bihari rolls with fresh vegetables and special sauce</p>
+                                <div class="menu-price">Rs 280</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://cheeziousmenue.pk/wp-content/uploads/2024/05/4.webp" alt="Cheesey stick">
+                            <div class="menu-card-content">
+                                <h3>Cheesy Sticks</h3>
+                                <p>Golden fried cheese sticks with garlic mayo dip</p>
+                                <div class="menu-price">Rs 320</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://png.pngtree.com/png-vector/20231018/ourmid/pngtree-the-buffalo-wing-chronicles-transpreant-background-png-image_10308762.png" alt="Chicken Wings">
+                            <div class="menu-card-content">
+                                <h3>Chicken Wings</h3>
+                                <p>Spicy buffalo wings with ranch dip and celery sticks</p>
+                                <div class="menu-price">Rs 450</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Garlic Bread">
+                            <div class="menu-card-content">
+                                <h3>French Fries</h3>
+                                <p>Crispy fries with cheesy topping and herbs</p>
+                                <div class="menu-price">Rs 250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="scroll-btn scroll-right" onclick="scrollRight('appetizers')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Pizzas Section -->
+            <section class="menu-section">
+                <h2>Pizzas</h2>
+                <div class="menu-scroll-container">
+                    <button class="scroll-btn scroll-left" onclick="scrollLeft('pizzas')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="menu-horizontal-scroll" id="pizzas">
+                        <div class="menu-card">
+                            <img src="https://pkgiftshop.com/user_files/product_images/1670525661-ClLbsG.png" alt="Crown Crust">
+                            <div class="menu-card-content">
+                                <h3>Crown Crust Pizza</h3>
+                                <p>Special crown crust with double cheese and fresh toppings</p>
+                                <div class="menu-price">Rs 850</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://cheezious.com/_next/image?url=https%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fcategories%2F1724240904749-Somewhat%20Local.jpg&w=640&q=75" alt="Chicken Fajita">
+                            <div class="menu-card-content">
+                                <h3>Chicken Fajita Pizza</h3>
+                                <p>Spicy chicken fajita with bell peppers and onions</p>
+                                <div class="menu-price">Rs 900</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3wzcRC-Sp33wj8si1a8Ta3NrWda63oldK3g&s" alt="Cheese Lovers">
+                            <div class="menu-card-content">
+                                <h3>Cheese Lovers Pizza</h3>
+                                <p>Extra cheese with four cheese blend and herbs</p>
+                                <div class="menu-price">Rs 800</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://cheeziousmenu.pk/wp-content/uploads/2024/06/Chicken-Fajita.webp" alt="Chicken Tikka">
+                            <div class="menu-card-content">
+                                <h3>Chicken Tikka Pizza</h3>
+                                <p>Tandoori chicken tikka with special spices and sauce</p>
+                                <div class="menu-price">Rs 850</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://cheezious.com/_next/image?url=https%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fcategories%2F1763742047150-CH%20-%20MT%20App%20800x800_v01.png&w=640&q=75" alt="Malai Tikka">
+                            <div class="menu-card-content">
+                                <h3>Malai Tikka Pizza</h3>
+                                <p>Creamy malai tikka with mild spices and cheese</p>
+                                <div class="menu-price">Rs 850</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://cheezious.com/_next/image?url=https%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fcategories%2F1743101318163-800x800.jpg&w=640&q=75" alt="Peri Peri">
+                            <div class="menu-card-content">
+                                <h3>Peri Peri Pizza</h3>
+                                <p>Spicy peri peri chicken with vegetables</p>
+                                <div class="menu-price">Rs 800</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="scroll-btn scroll-right" onclick="scrollRight('pizzas')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Burgers Section -->
+            <section class="menu-section">
+                <h2>Burgers</h2>
+                <div class="menu-scroll-container">
+                    <button class="scroll-btn scroll-left" onclick="scrollLeft('burgers')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="menu-horizontal-scroll" id="burgers">
+                        <div class="menu-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlNAqOyfOVxfgMOLH-3IwUtfNHfghOEIGnZA&s" alt="Reggy Burger">
+                            <div class="menu-card-content">
+                                <h3>Reggy Burger</h3>
+                                <p>Classic beef burger with special sauce and fresh veggies</p>
+                                <div class="menu-price">Rs 450</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://cheezious.com/_next/image?url=https%3A%2F%2Fs3-me-south-1.amazonaws.com%2Fcz-content-prod%2Fcategories%2F1724241007340-Burgerz.jpg&w=640&q=75" alt="Bazinga Burger">
+                            <div class="menu-card-content">
+                                <h3>Bazinga Burger</h3>
+                                <p>Double patty with extra cheese and special sauce</p>
+                                <div class="menu-price">Rs 550</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgbtjZctISVs8kcEjxr_RBUSyg0m2kcn0B5g&s" alt="Bazooka Burger">
+                            <div class="menu-card-content">
+                                <h3>Bazooka Burger</h3>
+                                <p>Triple layer burger with bacon and double cheese</p>
+                                <div class="menu-price">Rs 650</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chicken Burger">
+                            <div class="menu-card-content">
+                                <h3>Chicken Burger</h3>
+                                <p>Crispy chicken fillet with mayo and fresh lettuce</p>
+                                <div class="menu-price">Rs 400</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cheese Burger">
+                            <div class="menu-card-content">
+                                <h3>Cheese Burger</h3>
+                                <p>Double cheese with beef patty and special sauce</p>
+                                <div class="menu-price">Rs 500</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="scroll-btn scroll-right" onclick="scrollRight('burgers')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Side Orders Section -->
+            <section class="menu-section">
+                <h2>Side Orders</h2>
+                <div class="menu-scroll-container">
+                    <button class="scroll-btn scroll-left" onclick="scrollLeft('sides')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="menu-horizontal-scroll" id="sides">
+                        <div class="menu-card">
+                            <img src="https://png.pngtree.com/png-clipart/20250418/original/pngtree-crispy-french-fries-on-white-background-png-image_20723061.png" alt="Fries">
+                            <div class="menu-card-content">
+                                <h3>French Fries</h3>
+                                <p>Crispy golden fries with special seasoning</p>
+                                <div class="menu-price">Rs 200</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2UQYKmel-K1D4F9MPQ7xj3SyzXYvRwER2eQ&s" alt="Nuggets">
+                            <div class="menu-card-content">
+                                <h3>Chicken Nuggets</h3>
+                                <p>Crispy chicken nuggets with honey mustard dip</p>
+                                <div class="menu-price">Rs 300</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://thumbs.dreamstime.com/b/fried-chicken-legs-isolated-white-background-deep-crispy-fast-food-clipping-path-146069919.jpg" alt="Chicken Pieces">
+                            <div class="menu-card-content">
+                                <h3>Chicken Pieces</h3>
+                                <p>Spicy fried chicken pieces with garlic sauce</p>
+                                <div class="menu-price">Rs 350</div>
+                            </div>
+                        </div>
+                        <div class="menu-card">
+                            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Onion Rings">
+                            <div class="menu-card-content">
+                                <h3>Onion Rings</h3>
+                                <p>Crispy fried onion rings with ketchup</p>
+                                <div class="menu-price">Rs 250</div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="scroll-btn scroll-right" onclick="scrollRight('sides')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo-section">
+                    <i class="fa-solid fa-utensils footer-icon-text"></i>
+                    <h3>Cheezious Menu</h3>
+                </div>
+                <p>"Dive into the irresistible flavors of Cheezious menu—where every bite is cheesy perfection for cheese lovers!"</p>
+            </div>
+
+            <div class="footer-right">
+                <h4>FOLLOW US :</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="currentYear"></span> Cheezious | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            navLinks.classList.toggle('active');
+            
+            // Change icon
+            if (navLinks.classList.contains('active')) {
+                menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        }
+
+        // Horizontal scroll functions
+        function scrollLeft(sectionId) {
+            const scrollContainer = document.getElementById(sectionId);
+            scrollContainer.scrollBy({
+                left: -300,
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight(sectionId) {
+            const scrollContainer = document.getElementById(sectionId);
+            scrollContainer.scrollBy({
+                left: 300,
+                behavior: 'smooth'
+            });
+        }
+
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Cheezious</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h2>Cheezious</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- About Page Content -->
+    <section class="page-header">
+        <h1>About Cheezious</h1>
+    </section>
+
+    <div class="page-content">
+        <div class="about-content">
+            <section class="content-section">
+                <h2 class="section-title">Our Story</h2>
+                <p>
+                    Founded in 2015, Cheezious was born from a simple love for cheese. What started as a small food truck 
+                    serving grilled cheese sandwiches has grown into a beloved restaurant dedicated to all things cheesy.
+                </p>
+                <p>
+                    Our mission is to create the most indulgent, flavorful cheese dishes using the highest quality 
+                    ingredients sourced from local dairy farms and artisan cheese makers.
+                </p>
+            </section>
+
+            <div class="about-highlight">
+                <h3>Quality Commitment</h3>
+                <p>
+                    We source only the finest ingredients and maintain the highest standards of hygiene and 
+                    food preparation. Our chefs are trained in traditional and modern cheese preparation techniques.
+                </p>
+            </div>
+
+            <section class="content-section">
+                <h2 class="section-title">Our Philosophy</h2>
+                <p>
+                    At Cheezious, we believe that cheese has the power to bring people together and create 
+                    unforgettable dining experiences. Every dish is crafted with passion and a whole lot of cheese!
+                </p>
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Community Involvement</h2>
+                <p>
+                    Cheezious is committed to giving back to the community. We participate in local events, 
+                    support charitable causes, and strive to be a positive force in our neighborhood.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo-section">
+                    <i class="fa-solid fa-utensils footer-icon-text"></i>
+                    <h3>Cheezious Menu</h3>
+                </div>
+                <p>"Dive into the irresistible flavors of Cheezious menu—where every bite is cheesy perfection for cheese lovers!"</p>
+            </div>
+
+            <div class="footer-right">
+                <h4>FOLLOW US :</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="currentYear"></span> Cheezious | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            navLinks.classList.toggle('active');
+            
+            // Change icon
+            if (navLinks.classList.contains('active')) {
+                menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        }
+
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+</html>
+</html>

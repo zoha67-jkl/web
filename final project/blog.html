@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheezious Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h2>Cheezious</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Blog Page Content -->
+    <section class="page-header">
+        <h1>Cheezious Blog</h1>
+    </section>
+
+    <div class="page-content">
+        <section class="banner">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Cheezious Banner">
+        </section>
+
+        <section class="content-area">
+            <div class="content-section" style="background-color: #EADFCB;">
+                <h2 style="color:#3B2415">CHEEZIOUS BLOG</h2>
+                <p>
+                    Cheezious brings you the perfect blend of rich cheese, bold flavors, and unbeatable taste.
+                    Every bite is crafted to satisfy your cravings and elevate your mood instantly.
+                    From cheesy pizzas to mouth-watering meals, Cheezious makes every moment delicious.
+                    Taste the difference — because with Cheezious, flavor always comes first.
+                </p>
+                
+                <div class="info-content">
+                    <!-- First Blog Post -->
+                    <div class="text-box-section">
+                        <div class="text-box">
+                            <h3 style="color:#3B2415">🧀 Cheeziouz – A New Standard of Taste</h3>
+                            <p>Cheeziouz is a modern brand built on the love for rich flavors and premium quality.
+                                 We believe that great taste creates memorable moments, which is why every Cheeziouz
+                                  product is crafted with care and attention to detail. Our goal is to deliver
+                                 a delicious experience that satisfies cravings and leaves a lasting impression.</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cheese Platter">
+                        </div>
+                    </div>
+
+                    <!-- Second Blog Post -->
+                    <div class="text-box-section">
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Quality Ingredients">
+                        </div>
+                        <div class="text-box">
+                            <h3 style="color:#3B2415">⭐ Quality You Can Trust</h3>
+                            <p>At Cheeziouz, quality is our top priority. We use carefully selected ingredients and follow 
+                                strict quality standards to ensure freshness, safety, and consistency in every product.
+                                 This commitment allows our customers to enjoy great taste with complete confidence and 
+                                 peace of mind.</p>
+                        </div>
+                    </div>
+
+                    <!-- Third Blog Post -->
+                    <div class="text-box-section">
+                        <div class="text-box">
+                            <h3 style="color:#3B2415">🚀 Perfect for Every Occasion</h3>
+                            <p>Whether it's a casual meal, a family gathering, or a special celebration,
+                                 Cheeziouz is the perfect choice. Our products are designed to suit all tastes and moments,
+                                 making every occasion more enjoyable. With Cheeziouz, every bite adds happiness and flavor 
+                                 to your day.</p>
+                        </div>
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Special Events">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo-section">
+                    <i class="fa-solid fa-utensils footer-icon-text"></i>
+                    <h3>Cheezious Menu</h3>
+                </div>
+                <p>"Dive into the irresistible flavors of Cheezious menu—where every bite is cheesy perfection for cheese lovers!"</p>
+            </div>
+
+            <div class="footer-right">
+                <h4>FOLLOW US :</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="currentYear"></span> Cheezious | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            navLinks.classList.toggle('active');
+            
+            // Change icon
+            if (navLinks.classList.contains('active')) {
+                menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        }
+
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

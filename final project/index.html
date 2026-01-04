@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheezious - Home of Juicy Burgers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h2>Cheezious</h2>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Home Page Content -->
+    <section class="page-header">
+        <h1>CHEEZIOUS</h1>
+    </section>
+
+    <div class="page-content">
+        <div class="home-content">
+            <section class="content-section">
+                <h2 class="section-title">Cheezious Speciality</h2>
+                <p>
+                    Cheezious is known for its premium quality ingredients, rich cheesy flavors,
+                    and customer-focused service. We believe in delivering taste that feels special
+                    every time you visit.
+                </p>
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Cheezious Specialty Food" class="responsive-image">
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Why Cheezious Offers Discounts</h2>
+                <p>
+                    Cheezious provides special discounts to make delicious food affordable for everyone.
+                    Our goal is to spread happiness, attract loyal customers, and give value for money
+                    without compromising on quality.
+                </p>
+                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Cheezious Discounts" class="responsive-image">
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Special Seating & Privacy</h2>
+                <p>
+                    Our seating area is designed to provide comfort, privacy, and a relaxing environment.
+                    Whether you are with family or friends, Cheezious ensures a peaceful and enjoyable
+                    dining experience for everyone.
+                </p>
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Cheezious Seating" class="responsive-image">
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Customer Comfort</h2>
+                <p>
+                    We focus on cleanliness, friendly staff, and a welcoming atmosphere.
+                    Cheezious is not just a restaurant, it is a place where memories are made.
+                </p>
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Cheezious Comfort" class="responsive-image">
+            </section>
+
+            <section class="content-section">
+                <h2 class="section-title">Special Events</h2>
+                <p>
+                    Cheezious offers a perfect space for special events such as birthdays,
+                    family gatherings, and small celebrations. We focus on comfort, privacy, and quality to 
+                    ensure that your special moments are enjoyed with delicious food and a pleasant environment.
+                </p>
+                <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                     alt="Cheezious Events" class="responsive-image">
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo-section">
+                    <i class="fa-solid fa-utensils footer-icon-text"></i>
+                    <h3>Cheezious Menu</h3>
+                </div>
+                <p>"Dive into the irresistible flavors of Cheezious menu—where every bite is cheesy perfection for cheese lovers!"</p>
+            </div>
+
+            <div class="footer-right">
+                <h4>FOLLOW US :</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="currentYear"></span> Cheezious | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            navLinks.classList.toggle('active');
+            
+            // Change icon
+            if (navLinks.classList.contains('active')) {
+                menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        }
+
+        // Set current year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
